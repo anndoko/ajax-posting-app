@@ -1,0 +1,79 @@
+<p>
+  <a id="my-click-html">Click Me (HTML)</a>
+</p>
+<div id="foo-html" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<br/>
+
+<p>
+  <a id="my-click-text">Click Me (Text)</a>
+</p>
+<div id="foo-text" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<br/>
+
+<p>
+  <a id="my-click-prepend">Click Me (Prepend)</a>
+</p>
+<div id="foo-prepend" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<br/>
+
+<p>
+  <a id="my-click-append">Click Me (Append)</a>
+</p>
+<div id="foo-append" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<br/>
+
+<p>
+  <a id="my-click-before">Click Me (Before)</a>
+</p>
+<div id="foo-before" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<br/>
+
+<p>
+  <a id="my-click-after">Click Me (After)</a>
+</p>
+<div id="foo-after" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+
+<!-- JS -->
+<script>
+  $("#my-click-html").click(function(){
+    $("#foo-html").html('<h1>zoo</h1>');
+  })
+
+  $("#my-click-text").click(function(){
+    $("#foo-text").text('<h1>zoo</h1>');
+  })
+
+  $("#my-click-prepend").click(function(){
+    $("#foo-prepend").prepend('<h1>zoo</h1>');
+  })
+
+  $("#my-click-append").click(function(){
+    $("#foo-append").append('<h1>zoo</h1>');
+  })
+
+  $("#my-click-before").click(function(){
+    $("#foo-before").before('<h1>zoo</h1>');
+  })
+
+  $("#my-click-after").click(function(){
+    $("#foo-after").after('<h1>zoo</h1>');
+  })
+</script>
